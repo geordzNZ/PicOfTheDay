@@ -23,7 +23,9 @@ function getPic(){
       document.getElementById('imgInfo').innerText = data.explanation
       document.getElementById('returnImg').src = data.url
       document.getElementById('returnImg').title = data.title
-      document.getElementById('imgHdURL').href = data.hdurl
+      document.getElementById('imgHdURL1').href = data.hdurl
+      document.getElementById('imgHdURL2').href = data.hdurl
+      document.getElementById('imgHDLink').innerText = data.hdurl
     })
 
   // get image

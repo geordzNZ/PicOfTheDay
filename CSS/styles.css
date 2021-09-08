@@ -19,8 +19,13 @@ body {
 #contentPage {
   display: grid;
   grid-template-columns: 1fr 5fr;
+  height: 95vh;
 }
 
 .tmpBorder {
   border: 1px red dotted;
+}
+
+img {
+  height: 90vh;
 }

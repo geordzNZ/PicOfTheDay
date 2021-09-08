@@ -7,15 +7,22 @@ const sources = [
 //Button Listeners and HTMl elements
   document.querySelector('#btnGetPic').addEventListener('click', getPic)
 
+  let targetImg = document.getElementById('returnImg')
+  
+
 
 console.log("Hello from the JS file")
 function getPic(){
   const source = sources.filter(s=> s.name==document.getElementById('sources').value)
-  console.log(source)
-  document.getElementById('tmpAnswer').innerText =  source[0].name + '\n'
-  document.getElementById('tmpAnswer').innerText +=  source[0].url + '\n'
-  document.getElementById('tmpAnswer').innerText +=  source[0].apiKey + '\n'
-  // connect to URL
+
+  fetch(source[0].url + source[0].apiKey)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data)
+      targetImg.src = data.url
+      targetImg.title = data.title
+    })
+
   // get image
   // return to page
 }

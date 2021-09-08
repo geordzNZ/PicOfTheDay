@@ -12,20 +12,29 @@ body {
   height: 100vh;
   width: 100vw;
 }
-
-#leftNav {
-  height: 95vh;
+header {
+  text-align: center;
 }
 #contentPage {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 3fr 2fr;
   height: 95vh;
 }
 
-.tmpBorder {
-  border: 1px red dotted;
+#contentCentre {
+  text-align: center;
+}
+#leftNav {
+  height: 95vh;
 }
 
 img {
-  height: 90vh;
+  height: 95vh;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+
+
+.tmpBorder {
+  border: 1px red dotted;
 }

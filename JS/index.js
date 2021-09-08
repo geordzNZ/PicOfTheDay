@@ -7,7 +7,7 @@ const sources = [
 //Button Listeners and HTMl elements
   document.querySelector('#btnGetPic').addEventListener('click', getPic)
 
-  let targetImg = document.getElementById('returnImg')
+  let targetImg = 
   
 
 
@@ -19,8 +19,11 @@ function getPic(){
     .then(res => res.json())
     .then(data => {
       console.log(data)
-      targetImg.src = data.url
-      targetImg.title = data.title
+      document.getElementById('imgTitle').innerText = data.title
+      document.getElementById('imgInfo').innerText = data.explanation
+      document.getElementById('returnImg').src = data.url
+      document.getElementById('returnImg').title = data.title
+      document.getElementById('imgHdURL').href = data.hdurl
     })
 
   // get image

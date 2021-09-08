@@ -21,11 +21,18 @@ header {
   height: 95vh;
 }
 
+#leftNav {
+  height: 95vh;
+}
+
 #contentCentre {
   text-align: center;
 }
-#leftNav {
-  height: 95vh;
+
+#contentRight {
+  display: grid;
+  padding: 0 10px;
+  grid-template-rows: 1fr 2fr 1fr;
 }
 
 img {
@@ -34,7 +41,9 @@ img {
   margin: 0px auto;
 }
 
-
-.tmpBorder {
-  border: 1px red dotted;
+h1 {
+  background: rgba(0, 255, 50, 15%);
 }
+/* .tmpBorder {
+  border: 1px red dotted;
+} */

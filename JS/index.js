@@ -4,13 +4,14 @@ const providers = [
   { name: 'Scenery', url: ''}
 }
 
-//Button Listeners
+//Button Listeners and HTMl elements
   document.querySelector('#btnGetPic').addEventListener('click', getPic)
 
+  let source = document.getElementById('cmboSources').value
 
 
 function getPic(){
-  // connect to URL
+  document.getElementById('tmpAnswer').innerText =   // connect to URL
   // get image
   // return to page
 }

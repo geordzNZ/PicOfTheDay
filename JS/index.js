@@ -27,6 +27,7 @@ function getPic(){
       document.getElementById('imgHdURL2').href = data.hdurl
       document.getElementById('imgHDLink').innerText = data.hdurl
     })
+    .catch(err => console.log('error err'))
 
   // get image
   // return to page
